@@ -7,8 +7,19 @@
     table, th, td {
       border: 1px solid black;
       border-collapse: collapse;
-      padding: 4px;  /* Reduced from 8px to 4px */
+      padding: 4px;
       text-align: center;
+      width: 100%;
+    }
+    /* Flexbox container */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .flex-item {
+      flex: 1;
+      padding: 10px;
     }
   </style>
 </head>
@@ -94,6 +105,71 @@
       <td>158.86</td>
     </tr>
   </table>
+
+  <div class="flex-container">
+    <!-- 2018 Table -->
+    <div class="flex-item">
+      <h2>Player Stats - 2018</h2>
+      <table>
+        <tr>
+          <th>Team Owner</th>
+          <th>Player Name</th>
+          <th>Position</th>
+          <th>Points For Excluding Last week</th>
+          <th>Average Points For</th>
+          <th>Round Picked</th>
+        </tr>
+        <tr>
+          <td>Nick Blink</td>
+          <td>Patrick Mahomes</td>
+          <td>QB</td>
+          <td>398.3</td>
+          <td>24.89</td>
+          <td>13.1</td>
+        </tr>
+        <tr>
+          <td>Tyler Bork</td>
+          <td>Todd Gurley II</td>
+          <td>RB</td>
+          <td>342.6</td>
+          <td>21.41</td>
+          <td>1.2</td>
+        </tr>
+        <!-- ... additional 2018 data here ... -->
+      </table>
+    </div>
+    <!-- 2019 Table -->
+    <div class="flex-item">
+      <h2>Player Stats - 2019</h2>
+      <table>
+        <tr>
+          <th>Team Owner</th>
+          <th>Player Name</th>
+          <th>Position</th>
+          <th>Points For Excluding Last week</th>
+          <th>Average Points For</th>
+          <th>Round Picked</th>
+        </tr>
+        <tr>
+          <td>Jon Lytle</td>
+          <td>Lamar Jackson</td>
+          <td>QB</td>
+          <td>414.4</td>
+          <td>25.9</td>
+          <td>12.1</td>
+        </tr>
+        <tr>
+          <td>justin fabrosis</td>
+          <td>Christian McCaffrey</td>
+          <td>RB</td>
+          <td>393.9</td>
+          <td>24.62</td>
+          <td>1.2</td>
+        </tr>
+        <!-- ... additional 2019 data here ... -->
+      </table>
+    </div>
+  </div>
 
 </body>
 </html>
